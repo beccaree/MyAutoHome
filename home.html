@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Link to bootstrap-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<!--Link to CSS file-->
+		<link rel="stylesheet" href="./CSS/stylesheet.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<title>MyAutoHome</title>
+		<link rel="icon" href="./icons/logo.png">
+	</head>
+	<body>
+	
+		<!--http://stackoverflow.com/questions/26080668/creating-a-bootstrap-twin-navbar-only-2nd-row-collapsible-->
+		<nav class="navbar navbar-default twoRow">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" 
+						data-toggle="collapse" 
+						data-target=".navbar-collapse">
+						<span><i class="fa fa-bars fa-2x"></i></span>
+					</button>
+					<a class="navbar-brand" href="home.html">
+						<span><img src="./icons/logo.png"/ style="width:32px; height:32px;">&nbsp;MyAutoHome by XYZ</span>
+					</a>	
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+						<li>
+							<select class="btn btn-default selectpicker" style="margin-top: 12px;">
+								<option>English</option>
+								<option>Japanese</option>
+							</select>
+						</li>
+						<li><a type="button"><i class="fa fa-flag fa-2x"></i><span class="circle">2<span></a></li>
+						<li><a href="#"><i class="fa fa-cog fa-2x"></i></a></li>
+						<li><a href="#"><i class="fa fa-user fa-2x"></i></a></li> 
+				</ul>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="home.html">Home</a></li>
+						<li><a href="doors&windows.html">Doors & Windows</a></li>
+						<li><a href="#">Lights</a></li>
+						<li><a href="security.html">Security</a></li>
+						<li><a href="#">Air Conditioning</a></li>
+						<li><a href="#">Appliances</a></li>
+						<li><a href="#">Intercom</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Room status</div>
+  						<div class="panel-body">
+  							<h4>Bedroom</h4>
+							<button class="btn btn-success my-dropdown" type="button">
+								<i class="fa fa-check-circle-o"></i>&nbsp;Secure
+							</button>
+  							<h4>Garage</h4>
+  							<button class="btn btn-success my-dropdown" type="button">
+								<i class="fa fa-check-circle-o"></i>&nbsp;Secure
+							</button>
+  							<h4>Kitchen & Dining</h4>
+  							<div class="dropdown">
+								<button class="btn btn-danger dropdown-toggle my-dropdown" type="button" data-toggle="dropdown">
+									<i class="fa fa-times-circle-o"></i>&nbsp;Not Secure&nbsp;<span class="caret"></span>
+								</button>
+  								<ul class="dropdown-menu">
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;Doors & Windows Closed</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-times-circle-o"></i>&nbsp;Lights On</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-times-circle-o"></i>&nbsp;Movement Detected</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;Appliances Off</a></li>
+  								</ul>
+							</div>
+  							<h4>Living room</h4>
+  							<div class="dropdown">
+								<button class="btn btn-danger dropdown-toggle my-dropdown" type="button" data-toggle="dropdown">
+									<i class="fa fa-times-circle-o"></i>&nbsp;Not Secure&nbsp;<span class="caret"></span>
+								</button>
+  								<ul class="dropdown-menu">
+    								<li><a href="#"><i class="fa fa-times-circle-o"></i>&nbsp;Window Open</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;Lights Off</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;No Movement Detected</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;Appliances Off</a></li>
+  								</ul>
+							</div>
+  							<h4>Master bedroom</h4>
+  							<button class="btn btn-success my-dropdown" type="button">
+								<i class="fa fa-check-circle-o"></i>&nbsp;Secure
+							</button>
+  							<h4>Office</h4>
+  							<div class="dropdown">
+								<button class="btn btn-danger dropdown-toggle my-dropdown" type="button" data-toggle="dropdown">
+									<i class="fa fa-times-circle-o"></i>&nbsp;Not Secure&nbsp;<span class="caret"></span>
+								</button>
+  								<ul class="dropdown-menu">
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;Doors & Windows Closed</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;Lights Off</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-check-circle-o"></i>&nbsp;No Movement Detected</a></li>
+    								<li class="divider"></li>
+    								<li><a href="#"><i class="fa fa-times-circle-o"></i>&nbsp;Appliances On</a></li>
+  								</ul>
+							</div>
+  						</div>
+  						<div class="panel-footer">
+  							<input class="btn btn-default my-dropdown" type="button" onclick="change(this)" value="Set House Alarm" />
+  						</div>
+					</div>
+					<div class="alert alert-info fade in" id="disarmedMsg">
+						<i class="fa fa-info-circle"></i>&nbsp;You have disarmed the house.
+					</div>
+					<div class="alert alert-success fade in" id="armedMsg">
+					<i class="fa fa-check-circle"></i>&nbsp;You have armed the house.
+					</div>
+				</div>
+				
+				<div class="col-sm-9">
+					<img width="100%" src="http://www.peppertreecourt.com/images/PTC_P2_1256_FloorPlan.gif" />
+				</div>
+				
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+    			
+			});
+
+			function change(btn) {
+				if ( btn.value == "Set House Alarm" ) {
+        			btn.value = "Disarm House"; 
+        			$('#disarmedMsg').hide();      			
+        			$("#armedMsg").fadeTo(2000, 500).slideUp(500, function(){
+    					$("#success-alert").hide();
+					});
+    			} else {
+        			btn.value = "Set House Alarm";
+        			$('#armedMsg').hide();
+        			$("#disarmedMsg").fadeTo(2000, 500).slideUp(500, function(){
+    					$("#disarmedMsg").hide();
+					});
+        		}
+
+			}
+		</script>
+	</body>
+</html>
+
+

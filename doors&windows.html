@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Link to bootstrap-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<!--Link to CSS file-->
+		<link rel="stylesheet" href="./CSS/stylesheet.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<title>MyAutoHome</title>
+		<link rel="icon" href="./icons/logo.png">
+	</head>
+	<body>
+	
+		<!--http://stackoverflow.com/questions/26080668/creating-a-bootstrap-twin-navbar-only-2nd-row-collapsible-->
+		<nav class="navbar navbar-default twoRow">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" 
+						data-toggle="collapse" 
+						data-target=".navbar-collapse">
+						<span><i class="fa fa-bars fa-2x"></i></span>
+					</button>
+					<a class="navbar-brand" href="home.html">
+						<span><img src="./icons/logo.png"/ style="width:32px; height:32px;">&nbsp;MyAutoHome by XYZ</span>
+					</a>	
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+						<li>
+							<select class="btn btn-default selectpicker" style="margin-top: 12px;">
+								<option>English</option>
+								<option>Japanese</option>
+							</select>
+						</li>
+						<li><a type="button"><i class="fa fa-flag fa-2x"></i></a></li> 
+						<li><a href="#"><i class="fa fa-cog fa-2x"></i></a></li>
+						<li><a href="#"><i class="fa fa-user fa-2x"></i></a></li> 
+				</ul>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="home.html">Home</a></li>
+						<li class="active"><a href="doors&windows.html">Doors & Windows</a></li>
+						<li><a href="#">Lights</a></li>
+						<li><a href="security.html">Security</a></li>
+						<li><a href="#">Air Conditioning</a></li>
+						<li><a href="#">Appliances</a></li>
+						<li><a href="#">Intercom</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-3">
+							Filter							
+						</div>
+						<div class="col-sm-9">
+	  						Rooms
+	  					</div>
+					</div>
+				</div>
+			</div>	
+		</div>	
+	</body>
+</html>

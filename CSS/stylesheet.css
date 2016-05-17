@@ -1,0 +1,28 @@
+.my-dropdown {
+	width: 100%;
+	max-width: 250px;
+}
+
+.circle {
+	color: #FF0000;
+}
+
+.thumbnail {
+	border: none;
+	position: relative;
+	margin-top: 5px;
+}
+
+.video-caption {
+	font-size: 20px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+td a {
+	color: black;
+}
+
+.alert{
+    display: none;
+}
