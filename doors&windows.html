@@ -36,9 +36,9 @@
 								<option>Japanese</option>
 							</select>
 						</li>
-						<li><a type="button"><i class="fa fa-flag fa-2x"></i></a></li> 
-						<li><a href="#"><i class="fa fa-cog fa-2x"></i></a></li>
-						<li><a href="#"><i class="fa fa-user fa-2x"></i></a></li> 
+						<li><a type="button" title="View notifications"><i class="fa fa-flag fa-2x"></i></a></li> 
+						<li><a href="#" title="Settings"><i class="fa fa-cog fa-2x"></i></a></li>
+						<li><a href="#" title="User"><i class="fa fa-user fa-2x"></i></a></li> 
 				</ul>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
@@ -81,13 +81,12 @@
 									<td>
 										<select class="btn btn-default selectpicker my-button">
 											<option>All</option>
-											<option>Bath</option>
+											<option>Bathroom</option>
 											<option>Bedroom</option>
 											<option>Entry</option>
 											<option>Garage</option>
 											<option>Dining</option>
 											<option>Living</option>
-											<option>Mst. Bath</option>
 											<option>Mst. Bedroom</option>
 											<option>Office</option>
 										</select>
@@ -120,13 +119,13 @@
 								<tr>
 									<td />
 									<td>
-										<button class="btn btn-default" style="float: right;">Filter</button>
+										<button class="btn btn-default" title="Filter" style="float: right;">Filter</button>
 									</td>
 								</tr>
 							</table>
 						</div>
 						<div class="panel-footer">
-							<button class="btn btn-default my-button">Close & Lock All</button>
+							<button class="btn btn-default my-button" title="Secure all doors & windows">Close & Lock All</button>
 						</div>
 					</div>
 				</div>
@@ -141,7 +140,7 @@
 							<h4>Entry</h4>
 							<div class="row">
 								<div class="col-xs-3 col-sm-2">
-									<a onclick="changeIcon(this)">
+									<a onclick="changeIcon(this)" title="click to toggle">
 										<img width="100%" src="./icons/closed-door.png" />
 										<p style="text-align: center;">Main Door</p>
 									</a>
@@ -151,25 +150,25 @@
 							<h4>Living Room, Kitchen & Dining</h4>
 							<div class="row">
 								<div class="col-xs-3 col-sm-2">
-									<a onclick="changeIcon(this)">
+									<a onclick="changeIcon(this)" title="click to toggle">
 										<img width="100%" src="./icons/closed-door.png" />
 										<p style="text-align: center;">Back Door</p>
 									</a>
 								</div>
 								<div class="col-xs-3 col-sm-2">
-									<a class="door-toggle" onclick="changeIcon(this)">
+									<a onclick="changeIcon(this)" title="click to toggle">
 										<img width="100%" src="./icons/closed-window.png" />
 										<p style="text-align: center;">North Window</p>
 									</a>
 								</div>
 								<div class="col-xs-3 col-sm-2">
-									<a onclick="changeIcon(this)">
+									<a onclick="changeIcon(this)" title="click to toggle">
 										<img width="100%" src="./icons/closed-window.png" />
 										<p style="text-align: center;">East Window 1</p>
 									</a>
 								</div>
 								<div class="col-xs-3 col-sm-2">
-									<a onclick="changeIcon(this)">
+									<a onclick="changeIcon(this)" title="click to toggle">
 										<img width="100%" src="./icons/closed-window.png" />
 										<p style="text-align: center;">East Window 2</p>
 									</a>
@@ -179,15 +178,31 @@
 							<h4>Garage</h4>
 							<div class="row">
 								<div class="col-xs-3 col-sm-2">
-									<a class="door-toggle" onclick="changeIcon(this)">
+									<a onclick="changeIcon(this)" title="click to toggle">
+										<img width="100%" src="./icons/closed-door.png" />
+										<p style="text-align: center;">Garage Door</p>
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<a onclick="changeIcon(this)" title="click to toggle">
+										<img width="100%" src="./icons/closed-door.png" />
+										<p style="text-align: center;">East Door</p>
+									</a>
+								</div>
+							</div>
+							<hr>
+							<h4>Master bedroom</h4>
+							<div class="row">
+								<div class="col-xs-3 col-sm-2">
+									<a onclick="changeIcon(this)" title="click to toggle">
 										<img width="100%" src="./icons/closed-window.png" />
 										<p style="text-align: center;">North Window</p>
 									</a>
 								</div>
 								<div class="col-xs-3 col-sm-2">
-									<a onclick="changeIcon(this)">
+									<a onclick="changeIcon(this)" title="click to toggle">
 										<img width="100%" src="./icons/closed-window.png" />
-										<p style="text-align: center;">East Window 1</p>
+										<p style="text-align: center;">Bathroom Window</p>
 									</a>
 								</div>
 							</div>
