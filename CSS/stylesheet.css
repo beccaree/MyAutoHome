@@ -1,4 +1,8 @@
-.my-dropdown {
+.floor {
+	margin-left: 12%;
+}
+
+.my-button {
 	width: 100%;
 	max-width: 250px;
 }
@@ -23,6 +27,10 @@ td a {
 	color: black;
 }
 
-.alert{
-    display: none;
+.alert {
+	display: none;
+}
+
+.bottom-space td {
+	padding-bottom: 10px;
 }

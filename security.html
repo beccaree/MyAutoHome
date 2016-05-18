@@ -57,41 +57,41 @@
 		<div class="container">
 			<div class="panel panel-default">
 				<div class="panel-heading">Video Cameras</div>
-	  			<div class="panel-body">
-	  				<table style="width:100%">
-	  					<tr>
-	  						<td width="33.3%" class="panel panel-default">
-	  							<a href="#" onclick="openModal('Front Door', './icons/entrance.jpg')">
-	    							<img class="thumbnail" width="100%" src="./icons/entrance.jpg" />
-	    							<p class="video-caption">Front Door</p>
-	    						</a>
-	    					</td>
-	    					<td width="33.3%" class="panel panel-default">
-	    						<a href="#" onclick="openModal('Garage', './icons/garage.jpg')">
-	    							<img class="thumbnail" width="100%" src="./icons/garage.jpg" />
-	    							<p class="video-caption">Garage</p>
-	    						</a>
+				<div class="panel-body">
+					<table style="width:100%">
+						<tr>
+							<td width="33.3%" class="panel panel-default">
+								<a href="#" onclick="openModal('Front Door', './icons/entrance.jpg')">
+									<img class="thumbnail" width="100%" src="./icons/entrance.jpg" />
+									<p class="video-caption">Front Door</p>
+								</a>
 							</td>
-	    					<td width="33.3%" class="panel panel-default">
-	    						<a href="#" onclick="openModal('Kitchen & Dining Room', './icons/kitchen.jpg')">
+							<td width="33.3%" class="panel panel-default">
+								<a href="#" onclick="openModal('Garage', './icons/garage.jpg')">
+									<img class="thumbnail" width="100%" src="./icons/garage.jpg" />
+									<p class="video-caption">Garage</p>
+								</a>
+							</td>
+							<td width="33.3%" class="panel panel-default">
+								<a href="#" onclick="openModal('Kitchen & Dining Room', './icons/kitchen.jpg')">
 									<img class="thumbnail" width="100%" src="./icons/kitchen.jpg" />
 									<p class="video-caption">Kitchen & Dining Room</p>
 								</a>
-	    					</td> 
-	  					</tr>
+							</td> 
+						</tr>
 						<tr>
 							<td class="panel panel-default">
 								<a href="#" onclick="openModal('Living Room', './icons/living.jpg')">
-	    							<img class="thumbnail" width="100%" src="./icons/living.jpg" />
-	    							<p class="video-caption">Living Room</p>
-	    						</a>
-	    					</td>
-						    <td class="panel panel-default">
-						    	<a href="#" onclick="openModal('Office', './icons/office.jpg')">
+									<img class="thumbnail" width="100%" src="./icons/living.jpg" />
+									<p class="video-caption">Living Room</p>
+								</a>
+							</td>
+							<td class="panel panel-default">
+								<a href="#" onclick="openModal('Office', './icons/office.jpg')">
 									<img class="thumbnail" width="100%" src="./icons/office.jpg" />
 									<p class="video-caption">Office</p>
 								</a>
-						    </td>
+							</td>
 						</tr>
 					</table>
 				</div>
@@ -99,27 +99,27 @@
 		</div>
 
 		<div id="videoModal" class="modal fade" role="dialog">
-  			<div class="modal-dialog modal-lg">
-    			<!-- Modal content-->
-    			<div class="modal-content">
-      				<div class="modal-header">
-        				<h4 style="text-align: center;" class="modal-title" />
-      				</div>
-      				<div class="modal-body">
-        				<img width="100%" />
-     				</div>
-      				<div class="modal-footer">
-        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      				</div>
-    			</div>
-  			</div>
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 style="text-align: center;" class="modal-title" />
+					</div>
+					<div class="modal-body">
+						<img width="100%" />
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<script>
 			function openModal(title, imgLink) {
 				$("#videoModal h4").html(title);
 				$("#videoModal img").attr('src', imgLink);
-    			$("#videoModal").modal();
+				$("#videoModal").modal();
 			}
 		</script>
 	</body>

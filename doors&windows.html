@@ -55,18 +55,168 @@
 		</nav>
 
 		<div class="container">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-3">
-							Filter							
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Advanced
 						</div>
-						<div class="col-sm-9">
-	  						Rooms
-	  					</div>
+						<div class="panel-body">
+							<table>
+								<tr class="bottom-space">
+									<td width="40%">
+										Sort By:
+									</td>
+									<td width="60%">
+										<select class="btn btn-default selectpicker my-button">
+											<option>Most Used</option>
+											<option>Alphabetical</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="bottom-space">
+									<td>
+										Rooms:
+									</td>
+									<td>
+										<select class="btn btn-default selectpicker my-button">
+											<option>All</option>
+											<option>Bath</option>
+											<option>Bedroom</option>
+											<option>Entry</option>
+											<option>Garage</option>
+											<option>Dining</option>
+											<option>Living</option>
+											<option>Mst. Bath</option>
+											<option>Mst. Bedroom</option>
+											<option>Office</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="bottom-space">
+									<td>
+										Type:
+									</td>
+									<td>
+										<select class="btn btn-default selectpicker my-button">
+											<option>All</option>
+											<option>Doors Only</option>
+											<option>Windows Only</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="bottom-space">
+									<td>
+										State:
+									</td>
+									<td>
+										<select class="btn btn-default selectpicker my-button">
+											<option>All</option>
+											<option>Open</option>
+											<option>Closed</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td />
+									<td>
+										<button class="btn btn-default" style="float: right;">Filter</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="panel-footer">
+							<button class="btn btn-default my-button">Close & Lock All</button>
+						</div>
 					</div>
 				</div>
-			</div>	
-		</div>	
+				<div class="col-sm-9">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Status Control
+						</div>
+
+						<!-- Dummy Data not including all the doors and windows in the rooms in the home page -->
+						<div class="panel-body">
+							<h4>Entry</h4>
+							<div class="row">
+								<div class="col-xs-3 col-sm-2">
+									<a onclick="changeIcon(this)">
+										<img width="100%" src="./icons/closed-door.png" />
+										<p style="text-align: center;">Main Door</p>
+									</a>
+								</div>
+							</div>
+							<hr>
+							<h4>Living Room, Kitchen & Dining</h4>
+							<div class="row">
+								<div class="col-xs-3 col-sm-2">
+									<a onclick="changeIcon(this)">
+										<img width="100%" src="./icons/closed-door.png" />
+										<p style="text-align: center;">Back Door</p>
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<a class="door-toggle" onclick="changeIcon(this)">
+										<img width="100%" src="./icons/closed-window.png" />
+										<p style="text-align: center;">North Window</p>
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<a onclick="changeIcon(this)">
+										<img width="100%" src="./icons/closed-window.png" />
+										<p style="text-align: center;">East Window 1</p>
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<a onclick="changeIcon(this)">
+										<img width="100%" src="./icons/closed-window.png" />
+										<p style="text-align: center;">East Window 2</p>
+									</a>
+								</div>
+							</div>
+							<hr>
+							<h4>Garage</h4>
+							<div class="row">
+								<div class="col-xs-3 col-sm-2">
+									<a class="door-toggle" onclick="changeIcon(this)">
+										<img width="100%" src="./icons/closed-window.png" />
+										<p style="text-align: center;">North Window</p>
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<a onclick="changeIcon(this)">
+										<img width="100%" src="./icons/closed-window.png" />
+										<p style="text-align: center;">East Window 1</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				
+			});
+
+			function changeIcon(current) {
+				var imgUrl = $('img', current).attr('src');
+
+				if (imgUrl == "./icons/closed-door.png") {
+					imgUrl = "./icons/opened-door.png";
+				} else if (imgUrl == "./icons/closed-window.png") {
+					imgUrl = "./icons/opened-window.png";
+				} else if (imgUrl == "./icons/opened-door.png") {
+					imgUrl = "./icons/closed-door.png";
+				} else {
+					imgUrl = "./icons/closed-window.png";
+				}
+
+				$("img", current).attr('src', imgUrl);
+			}
+		</script>	
 	</body>
 </html>
