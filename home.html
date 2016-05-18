@@ -36,7 +36,19 @@
 								<option>Japanese</option>
 							</select>
 						</li>
-						<li><a type="button" title="View notifications"><i class="fa fa-flag fa-2x"></i><span class="circle">2<span></a></li>
+						<li>
+							<a title="View notifications" onclick="showNotification()" style="position: relative;">
+								<i class="fa fa-flag fa-2x"></i>
+								<div class="circle">1</div>
+								<div class="alert alert-warning alert-dismissible fade in notification" role="alert">
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<i class="fa fa-exclamation-triangle"></i> 12/05/2016 22:30:12<br/>
+									Loss connection to dishwasher
+								</div>
+							</a>
+						</li>
 						<li><a href="#" title="Settings"><i class="fa fa-cog fa-2x"></i></a></li>
 						<li><a href="#" title="User"><i class="fa fa-user fa-2x"></i></a></li> 
 				</ul>
@@ -155,7 +167,11 @@
 						$("#disarmedMsg").hide();
 					});
 				}
+			}
 
+			function showNotification() {
+				$('.notification').show();
+				$('.circle').hide();
 			}
 		</script>
 	</body>

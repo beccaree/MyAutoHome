@@ -12,7 +12,24 @@ body {
 }
 
 .circle {
-	color: #FF0000;
+	color: white;
+	background-color: red;
+	text-align: center;
+	vertical-align: middle;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+
+.notification {
+	position: absolute;
+	right: 10px;
+	width: 270px;
+	top: 50px;
+	z-index: 100;
 }
 
 .thumbnail {
